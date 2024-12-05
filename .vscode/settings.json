@@ -41,6 +41,7 @@
     "**/tsconfig.json": true,
     "**/.npmrc": true,
     "**/angular.json": true,
-    "**/tslint.json": true
+    "**/tslint.json": true,
+    "**/src/app/components/devextreme-form-one": true
   }
 }

@@ -10,10 +10,14 @@ import {
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { DevextremeFormOneComponent } from './components/devextreme-form-one/devextreme-form-one.component';
+import { DevextremeFormeTwoComponent } from './components/devextreme-forme-two/devextreme-forme-two.component';
 
 @NgModule({
   declarations: [
     AppComponent,
+    DevextremeFormOneComponent,
+    DevextremeFormeTwoComponent,
   ],
   imports: [
     BrowserModule,
