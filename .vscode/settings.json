@@ -38,6 +38,9 @@
     "**/package.json": true,
     "**/tsconfig.json": true,
     "**/angular.json": true,
-    "**/tslint.json": true
+    "**/tslint.json": true,
+    "**/src/app/components/app-name-editor": true,
+    "**/src/app/components/my-form": true,
+    "**/src/app/components/profile-editor": true
   }
 }
