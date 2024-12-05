@@ -33,6 +33,14 @@
     "**/.editorconfig": true,
     "**/.gitignore": true,
     "**/README.md": true,
-    "**/karma.conf.js": true
+    "**/karma.conf.js": true,
+    "**/src/app/app-routing.module.ts": true,
+    "**/src/environments": true,
+    "**/package.json": true,
+    "**/src/typings.d.ts": true,
+    "**/tsconfig.json": true,
+    "**/.npmrc": true,
+    "**/angular.json": true,
+    "**/tslint.json": true
   }
 }

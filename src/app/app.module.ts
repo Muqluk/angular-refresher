@@ -3,6 +3,9 @@ import {
   ReactiveFormsModule,
 } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
+import {
+  DxButtonModule
+} from 'devextreme-angular';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -15,6 +18,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
+    DxButtonModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
