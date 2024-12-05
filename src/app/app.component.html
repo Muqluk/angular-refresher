@@ -1,3 +1,19 @@
-<app-devextreme-form-one></app-devextreme-form-one>
+<div>
+  <dx-switch [(value)]="showNew"></dx-switch>
+</div>
+
+<br>
+<br>
+<br>
+
+<ng-container *ngIf="showNew">
+  <app-devextreme-form-one></app-devextreme-form-one>
+</ng-container>
+
+
+<ng-container *ngIf="!showNew">
+  <app-devextreme-forme-two></app-devextreme-forme-two>
+</ng-container>
+
 
 <router-outlet></router-outlet>

@@ -7,7 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'angular-refresher';
+  showNew: boolean = false;
+
   helloWorld() {
     alert('Hello world!');
+  }
+
+  onValueChanged(value) {
+    this.showNew = value;
+    console.log(this.showNew)
   }
 }

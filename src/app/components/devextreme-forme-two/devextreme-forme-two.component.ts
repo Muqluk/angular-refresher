@@ -1,4 +1,14 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+
+import {
+  IFacility
+} from './facility-model';
+
+
+
 
 @Component({
   selector: 'app-devextreme-forme-two',
@@ -7,9 +17,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DevextremeFormeTwoComponent implements OnInit {
 
+  currentFacility: IFacility = {
+    description: '',
+    facilityCode: '',
+    isAcute: false,
+    isInpatient: false,
+    isOutpatient: false,
+    isRespiratory: false,
+    primaryCareSettingId: 0,
+  }
+
   constructor() { }
 
   ngOnInit(): void {
   }
+
 
 }

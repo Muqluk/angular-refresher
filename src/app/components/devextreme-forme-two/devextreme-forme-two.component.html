@@ -1,1 +1,15 @@
-<p>devextreme-forme-two works!</p>
+<h1>Facility Form</h1>
+<hr>
+<br>
+<br>
+
+<div>
+  <dx-form [(formData)]="currentFacility">
+    <dxi-item dataField="description"></dxi-item>
+    <dxi-item itemType="group" caption="ONE">
+      <div *dxTemplate="let data of currentFacility">
+        <app-care-settings [careSettings]="currentFacility"></app-care-settings>
+      </div>
+    </dxi-item>
+  </dx-form>
+</div>
