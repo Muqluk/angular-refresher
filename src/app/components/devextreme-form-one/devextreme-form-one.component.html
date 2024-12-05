@@ -1,0 +1,22 @@
+<h1>Generated Form</h1>
+<div>
+
+  <dx-form [formData]="employee"></dx-form>
+
+</div>
+
+<h1>Simple Items</h1>
+
+<div>
+
+  <dx-form [formData]="employee">
+    <dxi-item dataField="name"></dxi-item>
+    <dxi-item dataField="officeNumber"></dxi-item>
+    <dxi-item
+      dataField="hireDate"
+      [editorOptions]="hireDateOptions">
+    </dxi-item>
+
+  </dx-form>
+
+</div>
