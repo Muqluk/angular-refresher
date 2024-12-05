@@ -3,7 +3,8 @@ import {
   OnInit,
 } from '@angular/core';
 import {
-  FormBuilder
+  FormBuilder,
+  Validators,
 } from '@angular/forms';
 
 
@@ -15,7 +16,7 @@ import {
 export class ProfileEditorFormbuilderComponent implements OnInit {
 
   profileForm = this.fb.group({
-    firstName: [''],
+    firstName: ['', Validators.required],
     lastName: [''],
     address: this.fb.group({
       street: [''],

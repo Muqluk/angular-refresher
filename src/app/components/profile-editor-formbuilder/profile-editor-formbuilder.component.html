@@ -2,7 +2,7 @@
   <div>
     <label>
       First Name:
-      <input type="text" formControlName="firstName">
+      <input type="text" formControlName="firstName" required>
     </label>
   </div>
 
@@ -51,3 +51,16 @@
   <button type="submit" [disabled]="!profileForm.valid">Submit</button>
 
 </form>
+
+<p>
+  Form Value: {{profileForm.value | json}}
+</p>
+
+<p>
+  Form Status: {{profileForm.status}}
+</p>
+<hr>
+<p>
+  Form Errors: {{profileForm.errors| json}}
+</p>
+<hr>
