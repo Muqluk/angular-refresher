@@ -11,7 +11,7 @@ export interface IFacility extends ICareSettings {
   description?: string;
 }
 
-export class Facility implements IFacility {
+export class Facility implements IFacility, ICareSettings {
   description?: string;
   facilityCode?: string;
   isAcute?: boolean;

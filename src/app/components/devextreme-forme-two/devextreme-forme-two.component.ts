@@ -3,6 +3,7 @@ import {
   OnInit
 } from '@angular/core';
 
+import { NestedOptionHost } from 'devextreme-angular/core';
 import {
   IFacility
 } from './facility-model';
@@ -13,7 +14,8 @@ import {
 @Component({
   selector: 'app-devextreme-forme-two',
   templateUrl: './devextreme-forme-two.component.html',
-  styleUrls: ['./devextreme-forme-two.component.scss']
+  styleUrls: ['./devextreme-forme-two.component.scss'],
+  providers: [NestedOptionHost],
 })
 export class DevextremeFormeTwoComponent implements OnInit {
 
@@ -27,7 +29,7 @@ export class DevextremeFormeTwoComponent implements OnInit {
     primaryCareSettingId: 0,
   }
 
-  constructor() { }
+  constructor(private nestedOptionsHost: NestedOptionHost) { }
 
   ngOnInit(): void {
   }

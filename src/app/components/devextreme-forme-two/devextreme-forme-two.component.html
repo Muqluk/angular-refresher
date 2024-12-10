@@ -6,10 +6,10 @@
 <div>
   <dx-form [(formData)]="currentFacility">
     <dxi-item dataField="description"></dxi-item>
-    <dxi-item itemType="group" caption="ONE">
-      <div *dxTemplate="let data of currentFacility">
-        <app-care-settings [careSettings]="currentFacility"></app-care-settings>
-      </div>
-    </dxi-item>
+    <!-- <dxi-item itemType="group"> -->
+    <div *dxTemplate="let items of currentFacility">
+      <app-care-settings [careSettings]="currentFacility"></app-care-settings>
+    </div>
+    <!-- </dxi-item> -->
   </dx-form>
 </div>
