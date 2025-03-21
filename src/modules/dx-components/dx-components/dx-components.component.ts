@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-dx-components',
+  selector: 'mc-dx-components',
   templateUrl: './dx-components.component.html',
   styleUrls: ['./dx-components.component.scss']
 })

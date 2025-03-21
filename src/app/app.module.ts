@@ -1,11 +1,34 @@
 import { HttpClientModule } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import {
+  CUSTOM_ELEMENTS_SCHEMA,
+  NgModule,
+} from '@angular/core';
 
 import { BrowserModule } from '@angular/platform-browser';
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { RouterModule, Routes } from '@angular/router';
+import { DxComponentsModule } from '../modules';
+
+const routes: Routes = [
+  {
+    path: 'dx-components',
+    loadChildren: () => DxComponentsModule,
+  }
+  // { path: '**', component: PageNotFoundComponent }
+
+];
+
 @NgModule({
+  imports: [RouterModule.forRoot(routes)],
+  exports: [RouterModule]
+})
+export class AppRoutingModule { }
+
+@NgModule({
+  schemas: [
+    CUSTOM_ELEMENTS_SCHEMA
+  ],
   declarations: [
     AppComponent,
   ],
@@ -13,6 +36,7 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     BrowserModule,
     HttpClientModule,
+    DxComponentsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
