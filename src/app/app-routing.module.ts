@@ -16,7 +16,7 @@ import { DxComponentsModule } from '../modules';
 
 const routes: Routes = [
   {
-    path: 'dx-components',
+    path: '',
     loadChildren: () => DxComponentsModule,
   }
   // {

@@ -1,7 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DxComponentsComponent } from './dx-components/dx-components.component';
+import { DxComponentsComponent, Pane, Tab } from './dx-components/dx-components.component';
 
 const routes: Routes = [
   {
@@ -13,7 +13,11 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  declarations: [DxComponentsComponent],
+  declarations: [
+    DxComponentsComponent,
+    Pane,
+    Tab,
+  ],
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
