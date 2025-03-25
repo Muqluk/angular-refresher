@@ -33,6 +33,11 @@
     "**/.editorconfig": true,
     "**/.gitignore": true,
     "**/README.md": true,
-    "**/karma.conf.js": true
+    "**/karma.conf.js": true,
+    "**/tsconfig.json": true,
+    "**/package.json": true,
+    "**/angular.json": true,
+    "**/tslint.json": true,
+    "**/src/environments": true
   }
 }
